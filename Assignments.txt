@@ -1,0 +1,97 @@
+
+
+ASSIGNMENTS:
+	January 
+	   12: The Horoptor
+	   17: Möbius Strip
+	   19: Cast Face Studies
+	   24: Knots
+	   26: Done and Undone
+
+	February
+	    7: The Unconscious Mark
+	    9: Larp (Knight)
+	   16: Advanced Microscopy
+	   28: Bubble Matrix and Dragonfly Wings
+
+	March
+	    2: Japanese Wood Joinery
+	    7: Drawing from Memory
+	    9: Suit of Armour
+	   16: Perspective and Proportion
+	   21: Manifolds in Drapery
+	   23: Magic Lessons
+
+	April
+	    4: Branching Patterns
+	    6: Waves
+
+OMITTED ASSIGNMENTS:
+	January 
+	   10: Floating Tetrahedron
+	   31: Draw the Whole Room
+	February 
+	    2: Superflat
+
+
+PROJECTS:
+	1. The Score          =>  "Sounds and Signs"
+	2. Flow Visualization =>  "The Lightness of Stone"
+	3. Incident Light     =>  "Architectural Shadow Wrapping"
+	4. Data Infographic   =>  "Branching Story"
+	5. Take Apart         =>  "Deconstruction"
+	6. Garry Oak Meadow   =>  "Botanical Illustration"
+	7. Meta               =>  "Dimensional Folding"
+
+
+
+The Score
+
+	Exploration of the object as something capable of representing other sensations--illustrations of three static objects which evoke certian other sounds by the memories and stories they can tell.
+
+Flow Visualization
+	
+	Essay and animation exploring the capability of a landscape to flow and change over time and in our imaginations, as well as the power of imagination and art in general as a tool for imagining new things. Uses the example of teh topographical map as a representation of the landscape and the act of makiing changes in that mp as making changes in the landscape which we imagine. Try picturing the hill or pit represented in your mind as the animation changes.
+
+Incident Light
+
+	A series of sketches ex[ploring the intermeshing of architectural elements with organic shadows, inspired by some particularity evocative shadows spotted falling upon buildings while walking around campus and sketching the buildings.
+
+Data Infographic
+
+	A series of "maps" created to aid the development ogf my current video game project Keeper of the Labyrinth, a text-based branching narrative game. Represents mapping of the possible paths the [player can take through the scenes in the story, and at the same time the real connections between story nodes in my game code for the branching story structure. Serves as a jumping-off point for a more advanced interactive digital map for the player to see the paths fo tehir choices in the game on previous play-throughs, much like one would flip through a choose-your-own-adventure novel. In design, various issues needed to be tackled, such as the the mapping of paths into 2D space when noes have more than 4 connections with others, layout of nodes to create the most visually appealing and comprehendable effect, technical limitations in implementation, etc.
+
+Take Apart
+
+	This strange device is one which I found in a military antique store downtown, and i knew I had to get the moment I saw it. After researching the maker's marks on the side, i found that it's supposedly a ventilation gvalve for an airplane in WWII. The orbiting center part opens up to allow pressurized air to flow through. Similar air valves, though usually smaller, may be recognized in modern commercial airplanes or cross-country busses, set into the ceiling alongside controls for a booklight and such in order to allow the passenger control over air flow. 
+
+Garry Oak Meadow
+
+
+Meta
+
+	When I thought of the concept of "Meta", the strongest idea that came to mind was a geometric one; that of geometric constructs in one dimension that force themselves into a higher one. For instance we have the case of fractals, where their dimensional number serves as a measure of their complexity, and they can exist outisde of 2 and 3 dimensions, being somewhere in between: too complex to truly lie in two dimensions, but too simple to fill 3D space. I wanted to create something like this. I tried to draw a pattern in two dimensions for which it would be difficult to understand its form or purpose without folding it out into three. I started by imagining a cube and its geometric net, and what patterns could be drawn on its surface would look like when unfolded. For instance the line wrapping about all the sides of the cube such that it only touches the center of each side once (similar to the Petrial, or Petrie dual, obtained by wrapping such a line around the edges, but drawn across the faces for the sake of visibility). When mapped onto the two-dimensional net of the cube, this line seems fragmented and discontinuous, but, when that net is cut out and folded up into three dimensions it produces a beautiful effect where when one rotates the cube in order to follow the line, the rotations follow a specific pattern: left, right, left, right...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
