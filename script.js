@@ -4,104 +4,104 @@ let assignments = [
     {
         title: "The Horopter",
         date: "January 12",
-        image: "",
-        target: ""
+        image: "assets/1.png",
+        target: "./horopter.html"
     },
     {
         title: "Möbius Strip",
         date: "January 17",
-        image: "",
-        target: ""
+        image: "assets/2.png",
+        target: "./mobius.html"
     },
     {
         title: "Cast Faces",
         date: "January 19",
-        image: "",
-        target: ""
+        image: "assets/3.png",
+        target: "./faces.html"
     },
     {
         title: "Knots",
         date: "January 24",
-        image: "",
-        target: ""
+        image: "assets/4.png",
+        target: "./knots.html"
     },
     {
         title: "Done and Undone",
         date: "January 26",
-        image: "",
-        target: ""
+        image: "assets/5.png",
+        target: "./undone.html"
     },
     {
         title: "Unconscious Marks",
         date: "February 7",
-        image: "",
-        target: ""
+        image: "assets/6.png",
+        target: "./marks.html"
     },
     {
         title: "Larp (Knight)",
         date: "February 9",
-        image: "",
-        target: ""
+        image: "assets/7.png",
+        target: "./larp.html"
     },
     {
         title: "Advanced Microscopy",
         date: "February 16",
-        image: "",
-        target: ""
+        image: "assets/8.png",
+        target: "microscopy.html"
     },
     {
         title: "Bubble Matrices",
         date: "February 28",
-        image: "",
-        target: ""
+        image: "assets/9.png",
+        target: "bubble.html"
     },
     {
         title: "Japanese Wood Joinery",
         date: "March 2",
-        image: "",
-        target: ""
+        image: "assets/10.png",
+        target: "joinery.html"
     },
     {
         title: "Drawing From Memory",
         date: "March 7",
-        image: "",
-        target: ""
+        image: "assets/11.png",
+        target: "memory.html"
     },
     {
         title: "Suit of Armour",
         date: "March 9",
-        image: "",
-        target: ""
+        image: "assets/12.png",
+        target: "armour.html"
     },
     {
         title: "Perspective + Proportion",
         date: "March 16",
-        image: "",
-        target: ""
+        image: "assets/13.png",
+        target: "perspective.html"
     },
     {
         title: "Manifolds in Drapery",
         date: "March 21",
-        image: "",
-        target: ""
+        image: "assets/14.png",
+        target: "drapery.html"
     },
     {
         title: "Magic Lessons",
         date: "March 23",
-        image: "",
-        target: ""
+        image: "assets/15.png",
+        target: "magic.html"
     },
     {
         title: "Branching Patterns",
         date: "April 4",
-        image: "",
-        target: ""
+        image: "assets/16.png",
+        target: "branching.html"
     },
     {
         title: "Waves",
         date: "April 6",
-        image: "",
-        target: ""
+        image: "assets/17.png",
+        target: "waves.html"
     },
 ]
 
@@ -109,31 +109,31 @@ let projects = [
     {
         title: "Sounds and Signs",
         subtitle: "The Score",
-        image: "",
+        image: "./assets/score-cover.png",
         target: ""
     },
     {
         title: "The Lightness of Stone",
         subtitle: "Flow Visualization",
-        image: "",
+        image: "./assets/stone-cover.png",
         target: ""
     },
     {
         title: "Architectural Shadow Wrapping",
         subtitle: "Incident Light",
-        image: "",
+        image: "./assets/light-cover.png",
         target: ""
     },
     {
         title: "Branching Storylines",
         subtitle: "Data Visualization Infographic",
-        image: "",
+        image: "./assets/branching-cover.png",
         target: ""
     },
     {
         title: "Deconstruction",
         subtitle: "Take Apart",
-        image: "",
+        image: "./assets/apart-cover.png",
         target: ""
     },
     {
@@ -145,7 +145,7 @@ let projects = [
     {
         title: "Dimensional Folding",
         subtitle: "Meta",
-        image: "",
+        image: "./assets/meta-cover.png",
         target: ""
     },
 ]
@@ -157,7 +157,7 @@ function populatePreviews() {
         let date = assignments[i].date
         let imageURL = assignments[i].image
         let target = assignments[i].target
-        let previewHTML = getPreviewHTML('assignment',title, date, imageURL, target)
+        let previewHTML = getAssignmentHTML(title, date, imageURL, target)
         document.getElementById("assignments").innerHTML += previewHTML
     }
     for (let i=0; i< projects.length; i++) {
@@ -165,22 +165,27 @@ function populatePreviews() {
         let subtitle = projects[i].subtitle
         let imageURL = projects[i].image
         let target = projects[i].target
-        let previewHTML = getPreviewHTML('project', title, subtitle, imageURL, target)
+        let previewHTML = getProjectHTML( title, subtitle, imageURL, target)
         document.getElementById("projects").innerHTML += previewHTML
     }
 }
 
-function getPreviewHTML(type, title, subtitle, imageURL, target) {
-    let html = `<a class="${type}" href="${target}">`
-    html += `<img class="${type}-image" src="${imageURL}">`
-    html += `<h2 class="${type}-title">${title}</h2>`
-    let subtype = ""
-    if (type === "project") {
-        subtype = "subtitle"
-    } else {
-        subtype = "date"
-    }
-    html += `<h3 class="${type}-${subtype}">${subtitle}</h3>`
+function getAssignmentHTML(title, date, imageURL, target) {
+
+    let html = `<a class="assignment" href="${target}">`
+    html += `<img class="assignment-image" src="${imageURL}">`
+    html += `<h2 class="assignment-title">${title}</h2>`
+    html += `<h3 class="assignment-date">${date}</h3>`
+    return html + `</a>`
+}
+
+function  getProjectHTML(title, date, imageURL, target) {
+    let html = `<a class="project" href="${target}">`
+    html += `<div class="project-title-field">`
+    html += `<h2 class="project-title">${title}</h2>`
+    html += `<h3 class="project-subtitle">${date}</h3>`
+    html += `</div>`
+    html += `<img class="project-image" src="${imageURL}">`
     return html + `</a>`
 }
 populatePreviews()
