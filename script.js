@@ -62,12 +62,6 @@ let assignments = [
         target: "joinery.html"
     },
     {
-        title: "Drawing From Memory",
-        date: "March 7",
-        image: "assets/11.png",
-        target: "memory.html"
-    },
-    {
         title: "Suit of Armour",
         date: "March 9",
         image: "assets/12.png",
@@ -110,43 +104,43 @@ let projects = [
         title: "Sounds and Signs",
         subtitle: "The Score",
         image: "./assets/score-cover.png",
-        target: ""
+        target: "./score.html"
     },
     {
         title: "The Lightness of Stone",
         subtitle: "Flow Visualization",
         image: "./assets/stone-cover.png",
-        target: ""
+        target: "./stone.html"
     },
     {
         title: "Architectural Shadow Wrapping",
         subtitle: "Incident Light",
         image: "./assets/light-cover.png",
-        target: ""
+        target: "./light.html"
     },
     {
         title: "Branching Storylines",
         subtitle: "Data Visualization Infographic",
         image: "./assets/branching-cover.png",
-        target: ""
+        target: "./infographic.html"
     },
     {
         title: "Deconstruction",
         subtitle: "Take Apart",
         image: "./assets/apart-cover.png",
-        target: ""
+        target: "./deconstruction.html"
     },
     {
         title: "Botanical Illustration",
         subtitle: "Garry Oak Meadow",
-        image: "",
-        target: ""
+        image: "./assets/botanical-cover.png",
+        target: "./botanical.html"
     },
     {
         title: "Dimensional Folding",
         subtitle: "Meta",
         image: "./assets/meta-cover.png",
-        target: ""
+        target: "./meta.html"
     },
 ]
 

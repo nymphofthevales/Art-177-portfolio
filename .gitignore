@@ -1,2 +1,6 @@
-artwork/
-.DS_Store
+*.clip 
+ *.mp4 
+ .DS_Store
+**/.DS_Store
+*.HEIC
+**/*.mp4
