@@ -1,6 +1,5 @@
 *.clip 
- *.mp4 
- .DS_Store
 **/.DS_Store
 *.HEIC
 **/*.mp4
+artwork+originals/

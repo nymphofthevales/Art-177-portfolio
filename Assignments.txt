@@ -70,14 +70,50 @@ Garry Oak Meadow
 
 Meta
 
-	When I thought of the concept of "Meta", the strongest idea that came to mind was a geometric one; that of geometric constructs in one dimension that force themselves into a higher one. For instance we have the case of fractals, where their dimensional number serves as a measure of their complexity, and they can exist outisde of 2 and 3 dimensions, being somewhere in between: too complex to truly lie in two dimensions, but too simple to fill 3D space. I wanted to create something like this. I tried to draw a pattern in two dimensions for which it would be difficult to understand its form or purpose without folding it out into three. I started by imagining a cube and its geometric net, and what patterns drawn on its surface would look like when unfolded. For instance the line wrapping about all the sides of the cube such that it only touches the center of each side once (similar to the Petrial, or Petrie dual, obtained by wrapping such a line around the edges, but drawn across the faces for the sake of visibility). When mapped onto the two-dimensional net of the cube, this line seems fragmented and discontinuous, but, when that net is cut out and folded up into three dimensions it produces a beautiful effect where when one rotates the cube in order to follow the line, the rotations follow a specific pattern: left, right, left, right...
+	When I thought of the concept of "meta", the strongest idea that came to mind was a geometric one; that of geometric constructs in one dimension that force themselves into a higher one. For instance we have the case of fractals, where their dimensional number serves as a measure of their complexity, and they can exist outisde of 2 and 3 dimensions, being somewhere in between: too complex to truly lie in two dimensions, but too simple to fill 3D space. I wanted to create something like this. I tried to draw a pattern in two dimensions for which it would be difficult to understand its form or purpose without folding it out into three. I started by imagining a cube and its geometric net, and what patterns drawn on its surface would look like when unfolded. For instance the line wrapping about all the sides of the cube such that it only touches the center of each side once (similar to the Petrial, or Petrie dual, obtained by wrapping such a line around the edges, but drawn across the faces for the sake of visibility). When mapped onto the two-dimensional net of the cube, this line seems fragmented and discontinuous, but, when that net is cut out and folded up into three dimensions it produces a beautiful effect where when one rotates the cube in order to follow the line, the rotations follow a specific pattern: left, right, left, right...
 
 
 
 
 
+passageway
+	down_right
+	left_down
+	left_up
+	up_right
 
+	left_down_right
+	left_up_right
+	left_up_down
+	up_down_right
 
+	left_right
+	up_down
+
+	left_up_down_right
+
+node_locked
+1	
+	down
+	left
+	right
+	up
+2
+	down_right
+	left_down
+	left_right
+	left_up	
+	up_down
+	up_right
+3
+	left_down_right
+	left_up_down
+	left_up_right
+	up_down_right	
+4
+	left_up_down_right
+
+Take
 
 
 

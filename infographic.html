@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Infographic</title>
+        <meta charset="UTF-8">
+        <link href="./stylesheet.css" rel="stylesheet"></link>
+        <link rel="preload" href="./artwork/PROJECT 4 branching story/1.png" as="image">
+        <link rel="preload" href="./artwork/PROJECT 4 branching story/2.png" as="image">
+        <link rel="preload" href="./artwork/PROJECT 4 branching story/3.png" as="image">
+        <link rel="preload" href="./artwork/PROJECT 4 branching story/4.png" as="image">
+        <link rel="preload" href="./artwork/PROJECT 4 branching story/5.png" as="image">
+        <link rel="preload" href="./artwork/PROJECT 4 branching story/6.png" as="image">
+        <link rel="preload" href="./artwork/PROJECT 4 branching story/13.png" as="image">
+    </head>
+    <body id="labyrinth-body">
+        <header>
+            <h1>Mapping the Labyrinth</h1>
+            <h2>Data Visualization Infographic</h2>
+            <img src="./assets/branching-cover.png" class="project-image project-header-image">
+            <nav class="page-nav">
+                <a href="light.html" id="back">
+                    <img src="./assets/left.png">
+                </a>
+                <a href="./index.html" id="home">
+                    <img src="assets/home.png">
+                </a>
+                <a href="./deconstruction.html" id="next">
+                    <img src="assets/right.png">
+                </a>
+            </nav>
+        </header>
+        <div class="labyrinth-gallery image-gallery">
+            <div class="image-gallery vert-gallery">
+                <div class="assignment-description">
+                    <p><span class="sc">Project:</span> An infographic to communicate some sort of data. A series of "maps" of the branching story structure for the video game I'm developing.
+                        </p>
+                    <p><span class="sc">Notes:</span> For the past year I have been working on programming, writing, and producing a video game called <a href="https://store.steampowered.com/app/1674260/Keeper_of_the_Labyrinth/" target="_blank"><i>Keeper of the Labyrinth.</i></a> It's a text-based game which follows a plot structure similar to the choose-your-own-adventure novels popular in the early 2000s. As might be imagined, the branching and intermeshing structure of such a story can be quite hard to visualize, so I chose this project as a chance to extend a vital part of my game: the map of the story branches.
+                        </p>
+                </div>
+                <div class="assignment-description">
+                    <p><span class="sc">Introduction:</span> In describing this project I'll be using the terminology of <a href="https://en.wikipedia.org/wiki/Graph_theory" target="_blank">graph theory</a>, since the most sensible structure to map connections between many objects like this is a <i>graph</i>. The objects being connected are called <i>nodes,</i> and in my case represent the scenes in the story, while the connections, termed <i>edges</i> represent the choices the player can make, each choice leading them to a different node.
+                        <figure>
+                            <img src="./artwork/PROJECT 4 branching story/graph.png">
+                            <figcaption>A simple graph (<a href="https://commons.wikimedia.org/wiki/File:6n-graf.png" target="_blank">Wikimedia commons</a>).</figcaption>
+                        </figure>
+                    </p>
+                    <p>Another important thing to note is that when I say mapping the story, I mean creating a visual representation of the already existing digital data structure holding my story text and connections. There are a few ways of representing the graph structure programmatically, but I won't get into the technical details here.</p>
+                </div>
+                <div class="assignment-description">
+                    <p><span class="sc">The task at hand,</span> of mapping the Labyrinth, comes in two parts. </p>
+                    <p><span class="sc">First:</span> Mapping the connections for myself, the developer, to be able to understand the plot structure as I start working on it again (I set it down for a few months due to school). The sketches on the right serve this purpose. These are relatively easy to put together, though tedious; essentially the process involves reading through my code and seeing which node in code has connections to which others, and connecting the unique names of those nodes with each other via arrows (connections are naturally one-way, since you can't go backwards through the story). The drawings shown here cover most of the areas in the game, each being connected to the one after it. The structure of the story, as can be seen, is such that branches don't just explode out into numerous endings, but rather the player is given a few options within an area, before the branches again converge into the next area. This happens successively for numerous areas before the player is led to one of two "pre-ending" scenes depending on their decisions in the story thus far. Some nodes are left unconnected, since whether they are included in the story or not is dependant on programmed responses to the choices players have made up to that point.</p>
+                    <p><span class="sc">Second:</span> To design a more visually appealing system to act as an interactive map for the player to use, to see which scenes have been unlocked, hover over nodes in the story to see what happened in that scene, as well as more advanced functions like allowing the player to start a new game path from any node in the graph. </p>
+                </div>
+                <div class="assignment-description">
+                    <p><span class="sc">There remains the question</span> of how to assemble the final interactive map. It could be one huge, pre-designed static image, with code to determine where the user is clicking on it and provide the interactive functionality that way. But in this case there would need to be different versions of the image or some other method to show which nodes are locked and unlocked. Instead I've decided to split it apart into <b>tiles</b>, so each can be rendered seperately in the final version. This creates the problem of how to assemble the tiles into the final design. I'm in the process of building a rudimentary application for doing this, but which needs some more work before it's capable of putting together the entire final map. In its early form, however, it is capable of hacking together and rendering one area, as shown below.
+                        </p>
+                </div>
+                <div class="assignment-description">
+                    <p><span class="sc">This system works excellently</span> for most areas in the game but there are certain scenes needing special treatment, such as the "conversation with the crow", the last sketch on the right. A map for this is difficult to design, since it is complex programmatically in terms of the amount of options the player has, but on the player's end it <i>feels</i> rather lightweight. In this case the text content of the story at each node is only one or two lines; the next line in the conversation. Not all the nodes need to be displayed, because this would only confuse the player. For this, a different visualization system will be needed, and I havent decided on it yet. But for now, the Labyrinth is on the way to being successfully mapped.</p>
+                </div>
+            </div>
+            <div class="image-gallery vert-gallery">
+                <img class="drawing" src="./artwork/PROJECT 4 branching story/1.png">
+                <img class="drawing" src="./artwork/PROJECT 4 branching story/2.png">
+                <img class="drawing" src="./artwork/PROJECT 4 branching story/3.png">
+                <img class="drawing" src="./artwork/PROJECT 4 branching story/4.png">
+                <img class="drawing" src="./artwork/PROJECT 4 branching story/5.png">
+                <img class="drawing" src="./artwork/PROJECT 4 branching story/6.png">
+                <img class="drawing" src="./artwork/PROJECT 4 branching story/13.png">
+            </div>
+        </div>
+        <div class="image-gallery" id="tileset">
+            <img src="./artwork/PROJECT 4 branching story/tileset/passageway/down_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/passageway/left_down.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/passageway/up_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/passageway/left_up.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/passageway/left_down_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/passageway/left_up_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/passageway/up_down_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/passageway/left_up_down.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/passageway/left_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/passageway/up_down.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/passageway/left_up_down_right.png">
+
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/2/down_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/2/left_down.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/2/up_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/2/left_up.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/3/left_down_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/3/left_up_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/3/up_down_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/3/left_up_down.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/2/left_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/2/up_down.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/4/left_up_down_right.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/1/left.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/1/down.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/1/up.png">
+            <img src="./artwork/PROJECT 4 branching story/tileset/node_unlocked/1/right.png">
+        </div>
+        <div class="assignment-description">
+            <p><span class="sc">The Tileset:</span> Pictured above is the basic tileset for the final design of the map. The basic tileset is 11 passageways to represent connections (arrows in my diagrams above) and 15 nodes: 25 tiles in total. There's also variants of each of the node forms for when they're being hovered over or clicked on, when locked and unlocked, for the interactive version when it's complete. That makes 3x15 + 3x15 = 90 total node tiles, and 101 total tiles. </p>
+            <p>When pieced together, they look like below; the final design for the map of the first area in my game, the antechamber. The goal of the final designs is be visually appealing as well as functional; the layout of the edges in the graph should resemble the passageways in a labyrinth, winding around each other, as well as generally flowing in the correct direction (e.g. a passageway should never turn back on itself, since this implies a dead end, and there is only one ending to the story that all the branches eventually converge to).
+            </p>
+        </div>
+        <img class="drawing" src="./artwork/PROJECT 4 branching story/antechamber.png">
+    </body>
+</html>
+
+
+

@@ -113,13 +113,13 @@ let projects = [
         target: "./stone.html"
     },
     {
-        title: "Architectural Shadow Wrapping",
+        title: "Architecture in Shadow",
         subtitle: "Incident Light",
         image: "./assets/light-cover.png",
         target: "./light.html"
     },
     {
-        title: "Branching Storylines",
+        title: "Mapping the Labyrinth",
         subtitle: "Data Visualization Infographic",
         image: "./assets/branching-cover.png",
         target: "./infographic.html"
